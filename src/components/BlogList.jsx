@@ -3,11 +3,14 @@ import BlogItem from './BlogItem';
 
 
 const BlogList = () => {
-    const [blogPosts, setBlogPosts] = useState([]);
+    const [blogPosts, setBlogPosts] = React.useState([]);
 
       useEffect(() => {
         fetch("api/GetBlogItems")
-          .then((res) => res.json())
+          .then((res) => {
+            console.log(res)
+            return res.json()
+        })
           .then(
             (result) => {
               setBlogPosts(result);
@@ -20,7 +23,7 @@ return (
         <div className="container">
             <div className="a-list-grid">
                 {blogPosts.map((blogPost) => (
-                    <BlogItem blogPost={blogPost}/>
+                    <BlogItem key={blogPost.Rowkey} blogPost={blogPost}/>
                 ))}
             </div>
         </div>
