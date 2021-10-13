@@ -25,18 +25,10 @@ namespace Az.ApiGet
             var query = table.CreateQuery<TableData>();
 
             var blogItems = (await table.ExecuteQuerySegmentedAsync(query, null)).ToList();
+            
             if(blogItems.Any())
             {
-                foreach(var blog in blogItems)
-                {
-                    var result = new BlogItem
-                    {
-                        Title = blog.Title,
-                        Blogtext = blog.Blogtext,
-                        PostDate = blog.PostDate
-                    };
-                    return new OkObjectResult(result);
-                }
+                return new OkObjectResult(blogItems);
             }
             return new OkResult();
         }
