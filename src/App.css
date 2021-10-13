@@ -36,6 +36,18 @@ body {
   h5{
     color: darkgreen;
   }
+  .app {
+    margin: auto;
+    padding-top: 60px;
+    width: 100vh;
+    text-align: center;
+  }
+  .lobby {
+    width: 400px;
+    margin: 200px auto;
+    padding: 10px;
+    display: inline;
+  }
   footer {
     position: fixed;
     bottom: 0;
