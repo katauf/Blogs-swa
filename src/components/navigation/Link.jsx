@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import BlogList from '../pages/BlogList';
 import CreateBlogItem from '../pages/CreateBlogItem';
+import Search from '../pages/Search';
 
 const Link = () => {
 
