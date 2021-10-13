@@ -27,6 +27,7 @@ const CreateBlogItem = () => {
       
          alert("Blogposten är skapad" + JSON.stringify(data));
          window.location.href = "/";
+    
     }
     return (<div className="lobby">
         <Form onSubmit={handleSubmit}>

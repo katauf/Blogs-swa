@@ -10,14 +10,14 @@ using Newtonsoft.Json;
 using Microsoft.Azure.Cosmos.Table;
 using System.Linq;
 
-namespace Az.Function
+namespace Az.ApiGet
 {
     public static class GetBlogItems
     {
         [FunctionName("GetBlogItems")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
-            [Table("BlogItem", Connection = "BlogDatabaseConnection")] CloudTable table,
+            [Table("BlogItem", Connection = "blogitems_STORAGE")] CloudTable table,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
@@ -40,5 +40,18 @@ namespace Az.Function
             }
             return new OkResult();
         }
+    }
+    public class TableData : TableEntity
+    {
+        public string Title { get; set; }
+        public string Blogtext { get; set; }
+        public DateTime PostDate { get; set; }
+    }
+
+    public class BlogItem
+    {
+        public string Title { get; set; }
+        public string Blogtext { get; set; }
+        public DateTime PostDate { get; set; }
     }
 }
