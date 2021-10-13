@@ -29,14 +29,20 @@ const CreateBlogItem = () => {
          window.location.href = "/";
     
     }
-    return (<div className="lobby">
+    return (<div class="offset-4 mt-4">
         <Form onSubmit={handleSubmit}>
             <Form.Group>
+            <div class="col-6">
                 <Form.Control className="mt-3" placeholder="Skriv titeln:" ref={title} />
+            </div>
+            <div class="col-6">
                 <Form.Label>Skriv bloggtexten</Form.Label>
                 <Form.Control as="textarea" rows={3} ref={blogtext} />
+            </div>
             </Form.Group>
-            <Button type="submit" variant="dark" className="mt-1">Lägg till</Button>
+            <div class="col-6 m-0 mt-4">
+                <Button type="submit" variant="dark" className="mt-1">Lägg till</Button>
+            </div>
         </Form>
     </div>)
 }

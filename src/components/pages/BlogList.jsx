@@ -3,7 +3,7 @@ import BlogItem from './BlogItem';
 
 
 const BlogList = () => {
-    const [blogPosts, setBlogPosts] = React.useState([]);
+    const [blogPosts, setBlogPosts] = useState([]);
 
       useEffect(() => {
         fetch("api/GetBlogItems")

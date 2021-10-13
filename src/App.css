@@ -13,19 +13,19 @@ body {
     text-align: center;
     padding: 10px;
   }
-  nav {
+  nav ul {
     background: #9DC46A;
     list-style-type: none;
     text-align: center;
     margin: 0;
     padding: 0;
   }
-  nav a {
+  nav ul li {
     display: inline-block;
     font-size: 20px;
     padding: 20px;
   }
-  a {
+  nav ul li a {
     color: green;
     text-decoration: none;
   }

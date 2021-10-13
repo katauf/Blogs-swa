@@ -1,17 +1,15 @@
-import React from "react";
-import Header from "./components/BlogHeader";
-import "bootstrap/dist/css/bootstrap.min.css";
-import CreateBlogItem from "./components/CreateBlogItem";
-import "./App.css";
-import BlogList from "./components/BlogList";
+import React from 'react';
+import Header from './components/navigation/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Link from './components/navigation/Link';
+import './App.css';
 
 const App = () => {
   return (
-    <>
+    <div>
       <Header />
-      <CreateBlogItem />
-      <BlogList />
-    </>
+      <Link />
+     </div>
   );
 };
 
