@@ -3,15 +3,9 @@ import React from 'react';
 const BlogItem = ({blogPost}) => {
 
     return (
-        <div className="a-comp-holder">
-            <div className="a-comp-card card">
-                <div className="a-card-container">
-
-                    <h3>{blogPost.title}</h3>
-                    <p>{blogPost.blogtext}</p>
-
-                </div>
-            </div>
+        <div className="mt-4 p-2">
+            <h3 className="text-success">{blogPost.title}</h3>
+            <p>{blogPost.blogtext}</p>
         </div>
     );
 };

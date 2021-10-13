@@ -17,7 +17,7 @@ const BlogList = () => {
 
 return (
         <div className="container">
-            <div className="a-list-grid">
+            <div className="list-group list-group-flush">
                 {blogPosts.map((blogPost) => (
                     <BlogItem key={blogPost.Rowkey} blogPost={blogPost}/>
                 ))}
