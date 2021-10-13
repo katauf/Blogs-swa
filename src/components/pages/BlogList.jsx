@@ -6,17 +6,13 @@ const BlogList = () => {
     const [blogPosts, setBlogPosts] = useState([]);
 
       useEffect(() => {
+
         fetch("api/GetBlogItems")
-          .then((res) => {
-            console.log(res)
-            return res.json()
-        })
-          .then(
-            (result) => {
-              setBlogPosts(result);
-              console.log(result);
-            }
-          );
+          .then(response => response.json())
+          .then(json => {
+            setBlogPosts(json)
+          });
+          
       }, []);
 
 return (
@@ -27,7 +23,7 @@ return (
                 ))}
             </div>
         </div>
-    );
-};
+    )
+}
 
 export default BlogList;
