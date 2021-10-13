@@ -15,7 +15,6 @@ const Header = () => {
                     <li><NavLink to="/">Hem</NavLink></li>
                     <li><NavLink to="/bloglist">Se tidigare inlägg</NavLink></li>
                     <li><NavLink to="/createblogitem">Lägg till blogginlägg</NavLink></li>
-                    <li><NavLink to="/search">Sök blogginlägg</NavLink></li>
                 </ul>
             </nav>
         </div>

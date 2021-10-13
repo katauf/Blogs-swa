@@ -12,7 +12,6 @@ const Link = () => {
             <Route exact path="/" component={Home}></Route>
             <Route exact path="/bloglist" component={BlogList}></Route>
             <Route exact path="/createblogitem" component={CreateBlogItem}></Route>
-            <Route exact path="/search" component={Search}></Route>
         </Switch>
     )
 }
