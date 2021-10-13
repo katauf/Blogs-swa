@@ -1,8 +1,13 @@
-import React from 'react';
+import React from "react";
+import Header from "./components/BlogHeader";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
-  const value = 'World';
-  return <div>Hello {value}</div>;
-}
+const App = () => {
+  return (
+    <>
+      <Header />
+    </>
+  );
+};
 
 export default App;
