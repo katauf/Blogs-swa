@@ -1,60 +1,65 @@
 body {
-    font-family: Cambria, sans-serif;
-  }
-  header {
-    background-image: url("./images/golf2.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 200px;
-  }
-  header h1 {
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-  nav ul {
-    background: #9DC46A;
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  nav ul li {
-    display: inline-block;
-    font-size: 20px;
-    padding: 20px;
-  }
-  nav ul li a {
-    color: green;
-    text-decoration: none;
-  }
-  a:hover {
-    color: darkgreen;
-    text-decoration: none;
-  }
-  h5{
-    color: darkgreen;
-  }
-  .app {
-    margin: auto;
-    padding-top: 60px;
-    width: 100vh;
-    text-align: center;
-  }
-  .lobby {
-    width: 400px;
-    margin: 200px auto;
-    padding: 10px;
-    display: inline;
-  }
-  footer {
-    position: fixed;
-    bottom: 0;
-    background-color: lightgray;
-    width: 100%;
-    background: #9DC46A;
-    text-align:center;
-    font-style:italic
-  }
-  
+  font-family: Cambria, sans-serif;
+}
+header {
+  background-image: url("./images/golf2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+header h1 {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+nav ul {
+  background: #9dc46a;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+nav ul li a {
+  color: green;
+  text-decoration: none;
+}
+a:hover {
+  color: darkgreen;
+  text-decoration: none;
+}
+h5 {
+  color: darkgreen;
+}
+.app {
+  margin: auto;
+  padding-top: 60px;
+  width: 100vh;
+  text-align: center;
+}
+.lobby {
+  width: 400px;
+  margin: 200px auto;
+  padding: 10px;
+  display: inline;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: lightgray;
+  width: 100%;
+  background: #9dc46a;
+  text-align: center;
+  font-style: italic;
+}
+.login-text {
+  margin-top: 80px;
+  font-size: 38px;
+  color: darkgreen;
+  text-align: center;
+}

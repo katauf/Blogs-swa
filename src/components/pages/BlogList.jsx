@@ -1,29 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import BlogItem from './BlogItem';
-
+import React, { useEffect, useState } from "react";
+import BlogItem from "./BlogItem";
 
 const BlogList = () => {
-    const [blogPosts, setBlogPosts] = useState([]);
+  const [blogPosts, setBlogPosts] = useState([]);
 
-      useEffect(() => {
+  useEffect(() => {
+    fetch("api/GetBlogItems")
+      .then((response) => response.json())
+      .then((json) => {
+        setBlogPosts(json);
+      });
+  }, []);
 
-        fetch("api/GetBlogItems")
-          .then(response => response.json())
-          .then(json => {
-            setBlogPosts(json)
-          });
-          
-      }, []);
-
-return (
-        <div className="container">
-            <div className="list-group list-group-flush">
-                {blogPosts.map((blogPost) => (
-                    <BlogItem key={blogPost.Rowkey} blogPost={blogPost}/>
-                ))}
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="container">
+      <div className="list-group list-group-flush">
+        {blogPosts.map((blogPost) => (
+          <BlogItem key={blogPost.Rowkey} blogPost={blogPost} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default BlogList;
