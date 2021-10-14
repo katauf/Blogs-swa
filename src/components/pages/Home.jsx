@@ -28,12 +28,12 @@ const Home = () => {
       }
     }
 
-  return(<div className="offset-4 mt-4">
-  <h2 className="mb-2">Du måste logga in för att läsa bloggen</h2>
+  return(<div className="offset-5 mt-4">
+  <h5 className="mb-2">Logga in för att läsa bloggen</h5>
   <div>
   {!userInfo &&
     (
-      <a className="btn btn-success mt-2 offset-2" key={provider} href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
+      <a className="btn btn-success mt-2 offset-1" key={provider} href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
       {provider}
       </a>
       )}                     
