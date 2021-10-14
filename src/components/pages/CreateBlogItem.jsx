@@ -25,7 +25,6 @@ const CreateBlogItem = () => {
           })
           .catch(() => alert("There was an error, please try again"));
       
-         alert("Blogposten är skapad" + JSON.stringify(data));
          window.location.href = "/";
     
     }
