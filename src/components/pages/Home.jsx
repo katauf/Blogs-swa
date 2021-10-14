@@ -29,7 +29,7 @@ const Home = () => {
     }
 
   return(<div className="offset-4 mt-4">
-  <h2>Du måste logga in för att läsa bloggen</h2>
+  <h2 className="mb-2">Du måste logga in för att läsa bloggen</h2>
   <div>
   {!userInfo &&
     (
