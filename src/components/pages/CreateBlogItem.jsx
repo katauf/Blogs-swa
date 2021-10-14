@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import {Form, Button} from 'react-bootstrap';
 
 const CreateBlogItem = () => {
-    
+
     const title = useRef();
     const blogtext = useRef();
 
