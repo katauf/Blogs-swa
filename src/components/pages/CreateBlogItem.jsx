@@ -23,7 +23,7 @@ const CreateBlogItem = () => {
         .then(function (res) {
             console.log('Request success: ', 'posten skapad' + res)
           })
-          .catch(() => alert("There was an error, please try again"));
+          .catch(() => console.log("There was an error, please try again"));
       
          window.location.href = "/";
     
