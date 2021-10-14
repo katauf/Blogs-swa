@@ -33,10 +33,11 @@ const CreateBlogItem = () => {
         <Form onSubmit={handleSubmit}>
             <Form.Group>
             <div className="col-6">
-                <Form.Control className="mt-3" placeholder="Skriv titeln:" ref={title} />
+                <Form.Label>Skriv titeln:</Form.Label>
+                <Form.Control className="mt-1" ref={title} />
             </div>
             <div className="col-6">
-                <Form.Label>Skriv bloggtexten</Form.Label>
+                <Form.Label className="mt-3" >Skriv bloggtexten:</Form.Label>
                 <Form.Control as="textarea" rows={3} ref={blogtext} />
             </div>
             </Form.Group>
